@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap local</title>
     <!--estilos css de bootstrap-->
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--estilos de css propios-->
     <link rel="stylesheet" href="estilos.css">
 
 </head>
@@ -15,16 +16,16 @@
     <div class="p-3 mb-2 bg-warning text-dark">
 <!--header-->
         
-    <div id="header" class="bi bi-emoji-smile" class="container">
+    <div class="bi bi-emoji-smile container">
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
           <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
             <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-            <h1><span id="titulo" class="fs-4" >CREATUTIT</span></h1>
+            <h1><span id="titulo" class="fs-4" >STAR WARS</span></h1>
           </a>
           <div class="text-muted">
           <ul class="nav nav-pills">
             <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Inicio</a></li>
-            <li class="nav-item"><a href="/bootstrap-5.1.3-dist/views/productos.html" class="nav-link">Productos</a></li>
+            <li class="nav-item"><a href="file:///C:/Users/melli/OneDrive/Documentos/curso%20de%20coder/prueba%20bootstrap/bootstrap-5.1.3-dist/views/productos.html" class="nav-link">Productos</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Preguntas frecuentes</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Quienes somoss?</a></li>
           </ul>
@@ -81,11 +82,31 @@
     <!-- card-->
     <div class="container m-5">
         <h2>Estructuras</h2>
-        <div class="row">
+        <div id="card" class="row">
             <div class="col">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore qui cumque id facilis. Beatae blanditiis, sunt nostrum alias cum necessitatibus? Ipsam voluptate quo mollitia error distinctio nemo assumenda architecto!</p>
             </div>
             <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;height: auto;">
+                    <img src="https://w0.peakpx.com/wallpaper/876/503/HD-wallpaper-luke-skywalker-the-mandalorian-star-wars-jedi-jedi-knight-spaceship.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Luke Skywalker</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="https://starwars.fandom.com/es/wiki/Luke_Skywalker" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem; height: auto;">
+                    <img src="https://static.wikia.nocookie.net/esstarwars/images/6/6f/Anakin_Skywalker_RotS.png/revision/latest/scale-to-width-down/350?cb=20160226204939" class="card-img-top"  alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Anakin Skywalker</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="https://starwars.fandom.com/es/wiki/Anakin_Skywalker" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
             <div class="col">
                 <div class="card" style="width: 18rem;height: auto;">
                     <img src="https://w0.peakpx.com/wallpaper/876/503/HD-wallpaper-luke-skywalker-the-mandalorian-star-wars-jedi-jedi-knight-spaceship.jpg" class="card-img-top" alt="...">
@@ -96,28 +117,40 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card" style="width: 18rem; height: auto;">
-                    <img src="https://p4.wallpaperbetter.com/wallpaper/1024/207/590/star-wars-star-wars-episode-iii-revenge-of-the-sith-anakin-skywalker-hayden-christensen-hd-wallpaper-preview.jpg" class="card-img-top"  alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title2</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;height: auto;">
-                    <img src="https://static.wikia.nocookie.net/esstarwars/images/1/1b/Darth_Maul_Tatooine.png/revision/latest/scale-to-width-down/333?cb=20180106022339" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title2</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
+    <!-- fin de card-->
+    <!--tablas-->
+    <table id="tablas" class="table table table-dark table-striped m-5 container" >
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+    <!--fin de tablas-->
     <!--footer-->
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -144,7 +177,7 @@
 
     
       
-    <!--fin de card-->
+   
     </div>
     <!--javasscript de bootstrap-->
     <script src="js/bootstrap.js"></script>

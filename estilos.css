@@ -1,4 +1,4 @@
-#header{
+header{
     background-color: whitesmoke;
 }
 #titulo{
@@ -7,4 +7,15 @@
 
 #navbar{
     background-color: whitesmoke;
+    color: orange;
+}
+
+#titulo-secundario{
+    color: orangered;
+}
+
+#card{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
 }
